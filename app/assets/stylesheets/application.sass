@@ -1,0 +1,81 @@
+@import "bootstrap-sprockets"
+@import "bootstrap"
+
+@media (min-width: 1500px)
+  #masonry-grid
+    .gutter-sizer
+      width: 4%
+    .grid-item
+      width: 22%
+      margin-bottom: 4%
+
+@media (max-width: 1200px)
+  #masonry-grid
+    .gutter-sizer
+      width: 4%
+    .grid-item
+      width: 48%
+
+@media (max-width: 768px)
+  #masonry-grid
+    .gutter-sizer
+      width: 0%
+    .grid-item
+      width: 100%
+
+body
+  background-color: #fafafa
+  font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif
+  margin-top: 75px
+  
+.navbar
+  margin-bottom: 0
+  background-color: #2d2d30
+  border: 0
+  font-size: 11px !important
+  letter-spacing: 4px
+  opacity: 0.9
+  li a, .navbar-brand
+    color: #d5d5d5 !important
+
+/* Add a gray color to all navbar links
+
+/* On hover, the links will turn white
+
+.navbar-nav li
+  a:hover
+    color: #fff !important
+  &.active a
+    color: #fff !important
+    background-color: #29292c !important
+
+/* The active link
+
+/* Remove border color from the collapsible button
+
+.navbar-default .navbar-toggle
+  border-color: transparent
+
+/* Dropdown
+
+.open .dropdown-toggle
+  color: #fff
+  background-color: #555 !important
+
+/* Dropdown links
+
+.dropdown-menu li a
+  color: #000 !important
+  &:hover
+    background-color: red !important
+
+/* On hover, the dropdown links will turn red
+.grid-sizer, .grid-item
+  margin-bottom: 5px
+  width: 20%
+
+.grid-item--width2
+  width: 20%
+
+.grid
+  margin: 0 auto

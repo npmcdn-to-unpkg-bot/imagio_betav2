@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ImagioBetav2</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag 'application' %>
+  <%= csrf_meta_tags %>
+  <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
+</head>
+<body>
+
+	<%= render 'shared/navigation' %>
+
+	<div id="main-container" class="container-fluid">
+		<div class="row">
+        	<div class="col-xs-12">
+          		<% flash.each do |name, msg| -%>
+            	<%= content_tag :div, msg, class: "alert alert-#{name}" %>
+          		<% end -%>
+        	</div>
+    	</div>
+		<div class="row">
+			<div class="col-xs-2">
+				<%= render 'shared/navigation' %>
+			</div>
+			<div class="col-xs-10">
+				<%= yield %>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
